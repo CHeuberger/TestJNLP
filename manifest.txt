@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Permissions: sandbox
+Codebase: cheuberger.github.io
+Application-Name: JNLP Test
+
