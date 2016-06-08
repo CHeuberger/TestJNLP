@@ -15,6 +15,7 @@ public class TestApplet extends JApplet {
     
     private void createGUI() {
         JPanel panel = new MainPanel();
+        panel.setOpaque(true);
         add(panel);
     }
 }

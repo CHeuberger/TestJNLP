@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>JNLP Test</title>
+        <vendor>CFH</vendor>
+        <offline-allowed />
+        <shortcut online="false">
+            <desktop />
+        </shortcut>    
+    </information>
+
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.7+" href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="test.jar" main="true" />
+    </resources>
+
+    <applet-desc 
+         name="JNLP Test Applet"
+         main-class="cfh.test.TestApplet"
+         width="200"
+         height="200">
+     </applet-desc>
+</jnlp>                                   
