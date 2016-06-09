@@ -1,0 +1,18 @@
+SELF SIGNED JAR
+
+1. create key
+keytool -genkeypair -alias cfh -keystore .../cfh/.keystore -validity 3650
+
+2. export certificate
+keytool -exportcert -alias cfh -keystore .../cfh/.keystore -file cfh.csr
+
+3. import into JRE used by browser plugin (normally 32-bit)
+cd <jre>/bin  (or use explorer)
+javacpl.exe
+  Security -> Manage Certificates...
+    Certificate type: Signer CA
+      Import certificate from file created above (cfh.csr)
+
+4. sign jar file
+jarsigner <file.jar> cfh
+
